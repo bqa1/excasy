@@ -12,7 +12,7 @@ usage: "userinfo (użytkownik)",
 run: async(client, message) => {
 
 
-    const member = message.mentions.members.first() || client.users.cache.get(g => g.id.toLowerCase() === args[0]) || client.users.cache.get(g => g.username.toLowerCase() === args[0])|| message.member 
+    const member = message.mentions.members.first() || client.users.cache.get(g => g.id.toLowerCase() === args[0]) || client.users.cache.get(g => g.username.toLowerCase() === args[0]) || client.users.cache.get("target")  || message.member 
     const embed = new Discord.MessageEmbed()
     .setTitle(`${member.user.username}`)
     .setColor("#2f3136")

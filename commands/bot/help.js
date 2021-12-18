@@ -36,7 +36,7 @@ run: async(client, message, args) => {
         const helpemb = new Discord.MessageEmbed()
         .setColor("#2f3136")
         .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
-        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear \`\`\`")
+        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm \`\`\`")
         .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome \`\`\`")
         .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id \`\`\`")
         .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\` stats, help, invite, ping \`\`\`")

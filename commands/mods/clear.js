@@ -31,7 +31,7 @@ module.exports = {
             const perm = new Discord.MessageEmbed()
             .setTitle("Something went wrong")
             .setColor("#2f3136")
-                .setDescription("Give amount to clear")
+                .setDescription("Provide an amount")
                 .setFooter(message.author.tag, message.author.displayAvatarURL())
             return message.reply({embeds: [perm]});
         } else {
