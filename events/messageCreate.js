@@ -47,8 +47,20 @@ module.exports.run = async (client, message) => {
               .setAuthor("Antiinvite")
               .setDescription(`<@${message.author.id}> try to send invite!`)
 
+              const warn = new MessageEmbed()
+              .setColor("#2f3136")
+              .setTitle("MOD SYSTEM | WARN")
+              .addField("Moderator", "excasy")
+              .addField("Reason:", "Automod | antyinvite")
+
           if (message.content.toLowerCase().includes(reklama[0].toLowerCase())) {
-            if (message.member.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR)) { return; }
+
+           if (message.member.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR)) { return; }
+            message.author.send({embeds: [warn]}).catch(() => {
+              message.channel.send("Cannot send message to this user")
+          })
+          db.add(`warnings_${message.guild.id}_${message.author.id}`, 1)
+          db.add(`waringreason_${message.guild.id}_${message.author.id}_Antyinvite`, 1)
             message.delete()
             return message.channel.send({ embeds: [blockedEmbed]})
   
@@ -61,7 +73,7 @@ module.exports.run = async (client, message) => {
       
       
     }
-    const link = ["https://", "www."]
+    const link = ["https://", "www.", "http://"]
 
     for (var i in link) {
         let dblink = await db.fetch(`link_${message.guild.id}`)
@@ -71,9 +83,20 @@ module.exports.run = async (client, message) => {
                 .setColor("#eb3434")
                 .setAuthor("AntiLink")
                 .setDescription(`<@${message.author.id}> try to send links`)
+                const warn = new MessageEmbed()
+                .setColor("#2f3136")
+                .setTitle("MOD SYSTEM | WARN")
+                .addField("Moderator", "excasy")
+                .addField("Reason:", "Automod | antylink")
   
             if (message.content.toLowerCase().includes(link[0].toLowerCase())) {
-                if (message.member.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR)) { return; }
+  
+              if (message.member.permissions.has(Discord.Permissions.FLAGS.ADMINISTRATOR)) { return; }
+              message.author.send({embeds: [warn]}).catch(() => {
+                message.channel.send("Cannot send message to this user")
+            })
+            db.add(`warnings_${message.guild.id}_${message.author.id}`, 1)
+            db.add(`waringreason_${message.guild.id}_${message.author.id}_Antylink`, 1)
               message.delete()
               return message.channel.send({ embeds: [blockedEmbed]})
     
@@ -90,8 +113,8 @@ module.exports.run = async (client, message) => {
 
   if (!message.guild) return;
 
-if(message.content === "excasy") {
-  message.reply("hey!")
+if(message.content.toLowerCase() === "excasy") {
+  message.reply("Hey!")
 }
   if (!message.content.startsWith(Prefix)) return;
   if (!message.member)
@@ -130,7 +153,18 @@ const cmd = new Discord.MessageEmbed()
  
     
    
-    
+    if (command.ownerOnly) {
+      if (!confik.owners.includes(message.author.id)) {
+          const ownerk = new Discord.MessageEmbed()
+              .setColor("#2f3136")
+              .setTitle(`Something went wrong`)
+              .setDescription("Only devs can use this command")
+              .setFooter(message.author.tag, message.author.displayAvatarURL())
+
+          return message.channel.send({embeds: [ownerk]});
+      }
+    }
+
       try {
           if (command) command.run(client, message, args)
       }  catch (err) {

@@ -35,7 +35,7 @@ run: async(client, message, args) => {
         if (prefix === null) prefix = dPrefix;
         const helpemb = new Discord.MessageEmbed()
         .setColor("#2f3136")
-        .setDescription(`[command](https://excasy.pl/commands)`)
+        .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
         .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\`ban, clear, warn, delwarn, kick, nickname, addrole, delrole, embed\`\`\`")
         .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\`prefix, antyinvite, antylink, modlog, welcome\`\`\`")
         .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\`8ball, ascii, avatar, botinivte, calc, car, caution, clown, fakt, gay, gayav, lyric, patpat, qr, randomavatar, zalgo, emojify, id\`\`\`")
@@ -44,7 +44,7 @@ run: async(client, message, args) => {
 
         .setFooter(`Type ${prefix}help on nsfw channel, for nsfw commands`)
         if(message.channel.nsfw) {
-            helpemb.addField(`>>> ${emotes.nsfw}・Nsfw`, "\`\`\`anal, ass, porngif, pussy\`\`\`")
+            helpemb.addField(`>>> ${emotes.nsfw}・Nsfw`, "\`\`\`anal, ass, gif, pussy\`\`\`")
             helpemb.setFooter(` `)
         }
 

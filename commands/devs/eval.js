@@ -9,7 +9,7 @@ module.exports = {
     name: "eval",
     ownerOnly: true,
     aliases : ["e"],
-    description: "komenda na wykonywanie kodu javascript",
+    description: "-",
     category: "dev",
     usage: "brak",
     run: async(client, message, args) => {
@@ -24,24 +24,25 @@ module.exports = {
         } catch (err) {
             if (query?.length > 1012) query = query?.substring(0, 1010) + "...";
             const embedniegut = new Discord.MessageEmbed()
-                .setTitle(`Błąd`)
-                .addField("Wejście:", `\`\`\`js\n${query}\n\`\`\``)
-                .addField("Wyjście:", `\`\`\`js\n${err.message}\n\`\`\``)
+                .setTitle(`ERROR`)
+                .addField("Input:", `\`\`\`js\n${query}\n\`\`\``)
+                .addField("Output:", `\`\`\`js\n${err.message}\n\`\`\``)
                 .setColor("#4E5D94");
             return message.reply({embeds: [embedniegut]});
         }
        
         if(message.content.includes("token")) {
-            message.reply("za górami za lasami żył bill laden z talibami. zamiast escape wcisnął enter i wysadził world trade center")
+            message.reply("sex")
             
         } else {
         let inspected = inspect(evaled, { depth: 0 });
         if (query?.length > 1012) query = query?.substring(0, 1010) + "...";
         if (inspected.toString().length > 1012) inspected = inspected.toString().substring(0, 1010) + "...";
         const embedgut = new Discord.MessageEmbed()
-            .addField("Wejscie:", `\`\`\`js\n${query}\n\`\`\``)
-            .addField("Wyjscie:", `\`\`\`js\n${inspected}\n\`\`\``)
-            .addField("Typ:", `\`\`\`yaml\n${typeof(evaled)}\n\`\`\``)
+        .setTitle("BONK")
+            .addField("Input:", `\`\`\`js\n${query}\n\`\`\``)
+            .addField("Output:", `\`\`\`js\n${inspected}\n\`\`\``)
+            .addField("Type:", `\`\`\`yaml\n${typeof(evaled)}\n\`\`\``)
             .setColor("#4E5D94");
             return message.reply({embeds: [embedgut]});
     
