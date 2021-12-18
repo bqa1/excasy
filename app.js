@@ -18,17 +18,17 @@ client.aliases = new Discord.Collection();
   require(`./handlers/${handler}`)(client);
 });
 
-process.on("uncaughtException", (err, message) => {
+//process.on("uncaughtException", (err, message) => {
 
-console.log("Błąd! " +err)
-});
+//console.log("Błąd! " +err)
+//});
 
-process.on("unhandledRejection", (reason, promise, message) => {
+//process.on("unhandledRejection", (reason, promise, message) => {
 
-      console.log("Błąd! " +reason)
+    //  console.log("Błąd! " +reason)
   
-    });
+  //  });
 
 
 client.login(config.token)
-  
+console.log("[PROCESS] starting")

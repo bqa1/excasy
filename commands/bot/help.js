@@ -36,15 +36,15 @@ run: async(client, message, args) => {
         const helpemb = new Discord.MessageEmbed()
         .setColor("#2f3136")
         .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
-        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\`ban, clear, warn, delwarn, kick, nickname, addrole, delrole, embed\`\`\`")
-        .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\`prefix, antyinvite, antylink, modlog, welcome\`\`\`")
-        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\`8ball, ascii, avatar, botinivte, calc, car, caution, clown, fakt, gay, gayav, lyric, patpat, qr, randomavatar, zalgo, emojify, id\`\`\`")
-        .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\`stats, help, invite, ping, bugreport\`\`\`")
-        .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\`serwer, user, channel, role\`\`\`")
+        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear \`\`\`")
+        .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome \`\`\`")
+        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id \`\`\`")
+        .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\` stats, help, invite, ping \`\`\`")
+        .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\` serwer, user, channel, role \`\`\`")
 
         .setFooter(`Type ${prefix}help on nsfw channel, for nsfw commands`)
         if(message.channel.nsfw) {
-            helpemb.addField(`>>> ${emotes.nsfw}・Nsfw`, "\`\`\`anal, ass, gif, pussy\`\`\`")
+            helpemb.addField(`>>> ${emotes.compass}・Nsfw`, "\`\`\`anal, ass, gif, pussy, hentai, boobs, solo, gonewild\`\`\`")
             helpemb.setFooter(` `)
         }
 

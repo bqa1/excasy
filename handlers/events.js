@@ -11,10 +11,9 @@ module.exports = (client) => {
     pull.event = pull.event || file.replace(".js", "")
     client.on(pull.event, pull.run.bind(null, client))
     } catch(err) {
-        console.log("błąd w ładowaniu eventu!")
-        console.log(err)
 
-    }
   }
+  }
+  
 
 }

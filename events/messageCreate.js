@@ -170,23 +170,5 @@ const cmd = new Discord.MessageEmbed()
       }  catch (err) {
         console.log("błąd! " + err)
               }
-             const interval = new setInterval(() => {
-        
-             const image = fetch('https://api.imgflip.com/get_memes', {
-               method: 'GET'
-         
-        })
-            const data =  db.fetch(`modlogs_${message.guild.id}`)
-            if (!data) return
-            const hannel = data.id
-            if(!hannel) { return; }
-        
-              const embeds = new MessageEmbed()
-              .setTitle("meme")
-              .setImage(image)
-              .setColor("#FFBF00")
-              .setTimestamp()
-          client.channels.cache.get(hannel).send({embeds: [embeds]})
-        
-             }, 2000)
+      
           }

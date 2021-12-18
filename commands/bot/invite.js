@@ -21,7 +21,7 @@ new MessageButton()
             .setStyle('LINK'),
             new MessageButton()
             .setURL("https://excasy.pl/support")
-            .setLabel('Support serwer')
+            .setLabel('Support server')
             .setStyle('LINK'),
     );
 
