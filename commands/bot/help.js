@@ -1,0 +1,53 @@
+const Discord = require("discord.js");
+const db = require("quick.db")
+const config = require("../../config.js")
+const emotes = require("../../emotes.json")
+const { MessageActionRow, MessageButton, MessageSelectMenu} = require('discord.js');
+const { prefix: dPrefix } = require("../../config.js");
+module.exports = {
+name: "help",
+    cooldown: 5,
+aliases : ["pomoc", "h", "p"],
+description: "show all commands",
+category: "bot",
+usage: "help (komenda)",
+run: async(client, message, args) => {
+    if (args[0]) {
+        const Command = client.commands.get(args[0]) || client.commands.find(x => x.aliases && x.aliases.includes(args[0]));
+
+
+        if (!Command) {
+            const dajcmd = new Discord.MessageEmbed()
+                .setTitle("Something went wrong")
+                .setDescription("Command not found")
+                .setColor("#2f3136")
+            message.reply({embeds: [dajcmd]})
+        }
+        const embed = new Discord.MessageEmbed()
+            .setColor("#2f3136")
+            .addField("Name", `\`${Command.name}\``)
+            .addField("alliases", `\`${Command.aliases ? Command.aliases.join(", ") : "Brak"}\``)
+            .addField("Desc", `\`${Command.description}\``)
+            .addField("Category", `\`${Command.category}\``)
+        return message.reply({embeds: [embed]})
+    } else {
+        let prefix = db.get(`prefix_${message.guild.id}`)
+        if (prefix === null) prefix = dPrefix;
+        const helpemb = new Discord.MessageEmbed()
+        .setColor("#2f3136")
+        .setDescription(`[command](https://excasy.pl/commands)`)
+        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\`ban, clear, warn, delwarn, kick, nickname, addrole, delrole, embed\`\`\`")
+        .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\`prefix, antyinvite, antylink, modlog, welcome\`\`\`")
+        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\`8ball, ascii, avatar, botinivte, calc, car, caution, clown, fakt, gay, gayav, lyric, patpat, qr, randomavatar, zalgo, emojify, id\`\`\`")
+        .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\`stats, help, invite, ping, bugreport\`\`\`")
+        .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\`serwer, user, channel, role\`\`\`")
+
+        .setFooter(`Type ${prefix}help on nsfw channel, for nsfw commands`)
+        if(message.channel.nsfw) {
+            helpemb.addField(`>>> ${emotes.nsfw}・Nsfw`, "\`\`\`anal, ass, porngif, pussy\`\`\`")
+            helpemb.setFooter(` `)
+        }
+
+        message.reply({embeds: [helpemb]})
+    }
+}}
