@@ -19,7 +19,7 @@ module.exports.run = async (client, channel) => {
         GUILD_STAGE_VOICE: "Events"
     };
 const welcome = new MessageEmbed()
-.setTitle("LOGs | Stworzenie kanału")
+.setTitle("LOGS | Channel create")
 .addField("Name", `\`${channel.name}\``)
 .addField('ID', `\`${channel.id}\``)
 .addField("Type", `\`${type[channel.type]}\``)

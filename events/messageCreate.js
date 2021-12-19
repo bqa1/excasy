@@ -23,11 +23,19 @@ module.exports.run = async (client, message) => {
   const mentionRegexPrefix = RegExp(`^<@!?${client.user.id}>`);
   const Prefix = message.content.match(mentionRegexPrefix) ? message.content.match(mentionRegexPrefix)[0] : cprefix
 
-  const ping = new Discord.MessageEmbed()
-    .setColor("#2f3136")
-    .setTitle(`hey! ${message.author.username}!`)
-    .addField(`>>> ${emotes.slash_commands}・Prefix`, `\`\`\`${cprefix} || @${client.user.username}\`\`\``)
-    .addField(`>>> ${emotes.connection_great}・Ping`, `\`\`\`${client.ws.ping}\`\`\``)
+  const ping = new MessageEmbed()
+  .setColor(`#2f3136`)
+  .setAuthor('Someone tagged me?', `${client.user.displayAvatarURL()}`)
+  .setDescription(`\`${client.user.username}\` - This is the new Discord Bot, that
+  will add new features to your server!
+  `)
+  .addField(`> ${emotes.slash_commands}・Prefix`, `\`\`\`${cprefix} || @${client.user.username}\`\`\``)
+  .addField(`> ${emotes.connection_great}・Ping`, `\`\`\`${client.ws.ping}\`\`\``)
+  .setTimestamp()
+  .setFooter(
+      message.member.displayName,
+      message.author.displayAvatarURL({ dynamic: true })
+  )
 
     if (message.content.match(Mention)) return message.reply({embeds: [ping]})
 
