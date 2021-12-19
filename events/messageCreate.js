@@ -29,8 +29,8 @@ module.exports.run = async (client, message) => {
   .setDescription(`\`${client.user.username}\` - This is the new Discord Bot, that
   will add new features to your server!
   `)
-  .addField(`> ${emotes.slash_commands}・Prefix`, `\`\`\` ${cprefix} || @${client.user.username}\`\`\``)
-  .addField(`> ${emotes.connection_great}・Ping`, `\`\`\`   ${client.ws.ping}\`\`\``)
+  .addField(`> ${emotes.slash_commands}・Prefix`, `\`\`\`${cprefix} || @${client.user.username}\`\`\``)
+  .addField(`> ${emotes.connection_great}・Ping`, `\`\`\`${client.ws.ping}\`\`\``)
   .setTimestamp()
   .setFooter(
       message.member.displayName,
@@ -38,6 +38,8 @@ module.exports.run = async (client, message) => {
   )
 
     if (message.content.match(Mention)) return message.reply({embeds: [ping]})
+
+
   if(message.channel.type === "DM") {
       message.reply("helo!")
   }
@@ -89,7 +91,6 @@ module.exports.run = async (client, message) => {
                 .setColor("#eb3434")
                 .setAuthor("AntiLink")
                 .setDescription(`<@${message.author.id}> try to send links`)
-                
                 const warn = new MessageEmbed()
                 .setColor("#2f3136")
                 .setTitle("MOD SYSTEM | WARN")
