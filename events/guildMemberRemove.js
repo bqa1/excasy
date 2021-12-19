@@ -24,9 +24,19 @@ module.exports.run = async (client,  member) => {
     const channel = data.id
     if(!channel) { return; }
 const welcome = new MessageEmbed()
-.setTitle(`${member.user.username} LEFT`)
-.setDescription(`${member.user} (${member.id}) leave server ;c. Now we have ${member.guild.memberCount} members`)
-.setColor("RED")
-.setImage("https://media.discordapp.net/attachments/917145205516427306/921694329788063764/goodbye.png?width=1193&height=671")
+.setTitle(`${member.user.tag} has left the server`)
+.setColor(`#2f3136`)
+.setImage('https://cdn.discordapp.com/attachments/917145205516427306/921694329788063764/goodbye.png')
+.setThumbnail(member.user.displayAvatarURL({
+  dynamic: true,
+  size: 1024
+}))
+.setDescription(`We hope you will come back to us someday.
+> Only **${member.guild.memberCount}** of us are left.`)
+.setFooter(
+    member.displayName,
+    member.user.displayAvatarURL({ dynamic: true })
+)
+.setTimestamp()
 client.channels.cache.get(channel).send({embeds: [welcome]})
 }
