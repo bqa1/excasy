@@ -10,9 +10,11 @@ module.exports.run = async (client, message, oldMessage, newMessage) => {
     if (!message.author || message.author.bot ) {
         return;
     }
+    if (message.toString().length > 1012) message = message.toString().substring(0, 1010) + "...";
+    
     const embeds = new MessageEmbed()
         .setTitle("LOGS | EDIT MESSAGE")
-        .addField("Channel", `\`${message.channel}\``)
+        .addField("Channel", `\`#${message.channel.name}\``)
         .addField('Link', `[click!](https://discord.com/channels/${message.guild.id}/${message.channel.id}/${message.id})`)
         .addField('New message', `\`${oldMessage || "-"}\``)
         .addField('Old message', `\`${message.content || "-"}\``)

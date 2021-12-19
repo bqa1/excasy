@@ -4,7 +4,7 @@ const db = require('quick.db')
 
 module.exports = {
     name: "antyinvite",
-    aliases : ["antyzaproszenia"],
+    aliases : ["antyzaproszenia", "antiinvite"],
     description: "Enable/Disable antyinvite system",
     category: "mod",
     cooldown: 5,

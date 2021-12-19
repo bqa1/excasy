@@ -10,7 +10,7 @@ module.exports = {
     cooldown: 5,
     usage: "antyinvite <on/off>",
     run: async(client, message, args) => {
-        if (!message.member.permissions.has(Discord.Permissions.FLAGS.MANAGE_SERWER))  {
+        if (!message.member.permissions.has(Discord.Permissions.FLAGS.MANAGE_GUILD))  {
             const perm = new Discord.MessageEmbed()
             .setTitle("Something went wrong")
             .setColor("#2f3136")

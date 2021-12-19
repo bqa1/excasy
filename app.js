@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const config = require("./config.js");
+
 const client = new Discord.Client({
   fetchAllMembers: false,
   allowedMentions: {
@@ -18,17 +19,36 @@ client.aliases = new Discord.Collection();
   require(`./handlers/${handler}`)(client);
 });
 
-//process.on("uncaughtException", (err, message) => {
+process.on("uncaughtException", (err, message) => {
 
-//console.log("Błąd! " +err)
-//});
+  const erroremb = new Discord.MessageEmbed()
+.setColor("#2f3136")
+.setTitle("ERROR")
+.addField("Error", `\`${err}\``)
 
-//process.on("unhandledRejection", (reason, promise, message) => {
+client.channels.cache.get("921805926598602793").send({embeds: [erroremb]})
+    
 
-    //  console.log("Błąd! " +reason)
+console.log("Błąd! " +err)
+});
+
+process.on("unhandledRejection", (reason, promise, message) => {
+
+const erroremb = new Discord.MessageEmbed()
+.setColor("#2f3136")
+.setTitle("ERROR")
+.addField("Promise", `\`${promise}\``)
+.addField("Error", `\`${reason}\``)
+
+ return client.channels.cache.get("921805926598602793").send({embeds: [erroremb]})
+    
+
+console.log("Błąd! " +reason)
   
-  //  });
+   });
 
 
-client.login(config.token)
+client.login(config.token).catch(() => {
+  throw new Error('Invaild token! visit https://discord.com/developers/applications/757308157855793232/bot for new token')
+})
 console.log("[PROCESS] starting")

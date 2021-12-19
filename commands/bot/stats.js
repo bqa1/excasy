@@ -25,11 +25,13 @@ module.exports = {
 			.addComponents(
         new MessageButton()
         .setCustomId('stats')
-        .setLabel('Stats')
+        .setLabel("| Stats")
+        .setEmoji("882326717459464272")
         .setStyle('PRIMARY'),
 				new MessageButton()
 					.setCustomId('wer')
-					.setLabel('version')
+					.setLabel('| Version')
+          .setEmoji("882326718243799090")
 					.setStyle('PRIMARY'),
 			);
       const xd = new Discord.MessageEmbed()

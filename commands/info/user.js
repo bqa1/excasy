@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const moment = require("moment");
 const emoji = require("../../emotes.json")
-
+moment.locale("EN");
 module.exports = {
 name: "user",
 aliases : ["ui", "whois", "ktotokurwa", "userinfo"],

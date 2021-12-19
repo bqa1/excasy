@@ -4,7 +4,7 @@ const db = require('quick.db')
 
 module.exports = {
     name: "antylink",
-    aliases : ["antylinki"],
+    aliases : ["antylinki", "antilink"],
     description: "Enable/Disable antylink system",
     category: "mod",
     cooldown: 5,

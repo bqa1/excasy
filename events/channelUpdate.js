@@ -2,7 +2,7 @@ const db = require('quick.db')
 const { MessageEmbed } = require('discord.js')
 const moment = require("moment");
 
-moment.locale("PL");module.exports.run = async (client, oldChannel, newChannel) => {
+module.exports.run = async (client, oldChannel, newChannel) => {
 
     const data = await db.fetch(`modlogs_${oldChannel.guild.id}`)
     if (!data) return
@@ -16,6 +16,8 @@ const nsfw = {
     .setTitle("LOGS | Channel update")
     .addField("Name before", `\`${oldChannel.name}\``)
     .addField("Name after", `\`${newChannel.name}\``)
+    .addField("Position before", `\`${oldChannel.rawPosition}\``)
+    .addField("Position after", `\`${newChannel.rawPosition}\``)
     .addField('Topic before', `\`${oldChannel.topic || "None"}\``)
     .addField('Topic after', `\`${newChannel.topic || "None"}\``)
     .addField('NSFW before', `\`${nsfw[oldChannel.nsfw]}\``)

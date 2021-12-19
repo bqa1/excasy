@@ -13,6 +13,9 @@ module.exports.run = async (client, message) => {
     if (!message.author || message.author.bot) {
         return;
     }
+
+    if (message.toString().length > 1012) message = message.toString().substring(0, 1010) + "...";
+
     const embeds = new MessageEmbed()
         .setTitle("LOGS | Deleted message")
         .addField("Channel", `\`#${message.channel.name}\``)

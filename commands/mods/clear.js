@@ -9,11 +9,11 @@ module.exports = {
     run: async(client, message, args) => {
 
      
-        if (!message.member.permissions.has(Discord.Permissions.MANAGE_MESSAGES))  {
+        if (!message.member.permissions.has(Discord.Permissions.FLAGS.MANAGE_MESSAGES))  {
             const perm = new Discord.MessageEmbed()
             .setTitle("Something went wrong")
             .setColor("#2f3136")
-            .setDescription("You dont have /`MANAGE_MESSAGES/`permissions")
+            .setDescription("You dont have \`MANAGE_MESSAGES\` permissions")
             .setFooter(message.author.tag, message.author.displayAvatarURL())
             return message.reply({embeds: [perm] });
           
@@ -66,7 +66,7 @@ module.exports = {
                         const embed = new Discord.MessageEmbed()
                         .setTitle("Succes")
                         .setColor("#2f3136")
-                        .setDescription(`Deleted \`${res.size}/${args[0] - 1}\` messages`)
+                        .setDescription(`Deleted \`${res.size}/${args[0]}\` messages`)
                         .setFooter(message.author.tag, message.author.displayAvatarURL())
                     return message.channel.send({embeds: [embed]})
 
