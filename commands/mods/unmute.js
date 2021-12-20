@@ -5,10 +5,10 @@ const { MessageEmbed } = module.require("discord.js");
 const ms = require("ms");
 const db = require("quick.db")
 module.exports = {
-  name: "mute",
-  aliases : ["supermute"],
+  name: "unmute",
+  aliases : [],
   category: "info",
-  description: "mute someone",
+  description: "unmute someone",
   run: async (client, message, args) => {
 
    if (!message.member.permissions.has(Discord.Permissions.MANAGE_MESSAGES))  {
@@ -42,7 +42,7 @@ module.exports = {
        const perm = new Discord.MessageEmbed()
        .setTitle("Something went wrong")
        .setColor("#2f3136")
-       .setDescription("Mention someone!\nValid usage: \`[p]mute @someone read rules\`")
+       .setDescription("Mention someone!\nValid usage: \`[p]unmute @someone\`")
        .setFooter(message.author.tag, message.author.displayAvatarURL())
        return message.reply({embeds: [perm] });
     }
@@ -50,7 +50,7 @@ module.exports = {
        const perm = new Discord.MessageEmbed()
        .setTitle("Something went wrong")
        .setColor("#2f3136")
-       .setDescription("Yoy cannot mute yourself")
+       .setDescription("You cannot unmute yourself")
        .setFooter(message.author.tag, message.author.displayAvatarURL())
        return message.reply({embeds: [perm] });
     }
@@ -60,40 +60,31 @@ module.exports = {
        const perm = new Discord.MessageEmbed()
        .setTitle("Something went wrong")
        .setColor("#2f3136")
-       .setDescription(`I cant mute ${user}`)
+       .setDescription(`I cant unmute ${user}`)
        .setFooter(message.author.tag, message.author.displayAvatarURL())
        return message.reply({embeds: [perm] });
    } 
 
-   if(user.roles.cache.has(channel)) {
+   if(!user.roles.cache.has(channel)) {
        const perm = new Discord.MessageEmbed()
        .setTitle("Something went wrong")
        .setColor("#2f3136")
-       .setDescription(`${user} is already muted`)
+       .setDescription(`${user} is already unmuted`)
        return message.reply({embeds: [perm] });
    }
 
    
-    const reason = args.slice(1).join(" ");
-    if (!reason) {
-        const perm = new Discord.MessageEmbed()
-        .setTitle("Something went wrong")
-        .setColor("#2f3136")
-            .setDescription("Provide an reason")
-            .setFooter(message.author.tag, message.author.displayAvatarURL())
-        return message.reply({embeds: [perm]});
-       
-    }
+  
     const mtembde = new MessageEmbed()
       .setColor("#2f3136")
-      .setTitle("MOD SYSTEM | Mute")
+      .setTitle("MOD SYSTEM | Unmute")
       .addField("Member:", `${user}`)
-      .addField("Reason", `\`${args.slice(1).join(" ")}\``)
       .addField("Moderator:", `${message.author}`)
-      .addfield("Guild:", `\`${message.guild}\``)
+      .addField("Guild:", `\`${message.guild}\``)
+
     user.send({ embeds: [mtembde] }).catch(() => { "cannot send message to this user"})
     message.channel.send({ embeds: [mtembde] });
-    user.roles.add(role);
+    user.roles.remove(role);
 
   },
 };

@@ -72,6 +72,7 @@ module.exports = {
             .addField("Moderator", `${message.author}`)
             .addField("Banned", `${target}`)
             .addField("Reason", `${pow}`)
+            .addfield("Guild:", `\`${message.guild}\``)
             .setFooter(message.author.tag, message.author.displayAvatarURL())
             target.send({embeds: [sukces]}).catch(() => { "cannot send message to this user"})
         await target.ban({reason: pow}).then(() => message.reply({embeds: [sukces]}));

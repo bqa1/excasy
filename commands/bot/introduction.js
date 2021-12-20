@@ -11,9 +11,9 @@ module.exports = {
         .setDescription('> You have a whole list of commands under `.help`, so if you forgot something, you can use it.')
         .addField('<:excasyred:922506870948790303> Technical Settings', `The default prefix is \`.\`, So if it suits you, you don't need to change it.
         > • \`.prefix <prefix>\` - setting a new prefix\n
-        > • \`.modlogs <#channel>\` - setting the channel for logs
+        > • \`.modlogs on/off <#channel>\` - setting the channel for logs
         > • \`.ticket-panel <contents>\` - setting a ticket
-        > • \`.muterole <@role>\` - setting the role to mute`)
+        > • \`.muterole set/delete <@role>\` - setting the role to mute`)
         .addField(`<:excasyorange:922506871074603008> Antilinks`, 
         `
         > • \`.antyinvite <on/off>\` - setting to block invitations
