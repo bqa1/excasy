@@ -29,10 +29,6 @@ const welcome = new MessageEmbed()
 .setTitle(`<@${member.user.id} joined the server!`)
 .setColor(`#2f3136`)
 .setImage('https://cdn.discordapp.com/attachments/917145205516427306/921694330081656882/welcomeexcasy.png')
-.setThumbnail(member.user.displayAvatarURL({
-  dynamic: true,
-  size: 1024
-}))
 .setDescription(`Welcome to **${member.guild.name}**
 > We hope that You will like our bot and add it to yourself!
 > you are our **${member.guild.memberCount} member.**`)

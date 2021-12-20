@@ -103,7 +103,6 @@
        .addField("Member:", `${user}`)
        .addField("Reason", `\`${reason}\``)
        .addField("Moderator:", `${message.author}`)
-       .addField("Guild", `${message.guild.name}`)
        .addField("Time:", `\`${time} minutes\`` );
      user.send({ embeds: [mtembde] }).catch(() => { "cannot send message to this user"})
      message.channel.send({ embeds: [mtembde] });
@@ -116,7 +115,6 @@
       .addField("Member:", `${user}`)
       .addField("Reason", `\`Automatic unmute\``)
       .addField("Moderator:", `MOD SYSTEM`)
-      .addField("Guild", `${message.guild.name}`)
 
        user.roles.remove(role);
        user.send({embeds: [mtembdex]}).catch(() => { return;})

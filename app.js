@@ -14,6 +14,7 @@ const client = new Discord.Client({
   intents: [
     "GUILDS","GUILD_BANS", "GUILD_VOICE_STATES", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS", "GUILD_MEMBERS"],
 });
+client.snipes = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();

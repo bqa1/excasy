@@ -27,10 +27,6 @@ const welcome = new MessageEmbed()
 .setTitle(`${member.user.tag} has left the server`)
 .setColor(`#2f3136`)
 .setImage('https://cdn.discordapp.com/attachments/917145205516427306/921694329788063764/goodbye.png')
-.setThumbnail(member.user.displayAvatarURL({
-  dynamic: true,
-  size: 1024
-}))
 .setDescription(`We hope you will come back to us someday.
 > Only **${member.guild.memberCount}** of us are left.`)
 .setFooter(
