@@ -15,6 +15,15 @@ module.exports = {
         const owner = await serwer.fetchOwner().catch(() => "Not found");
 const textchannels = serwer.channels.cache.filter(channel => channel.type === 'GUILD_TEXT').size;
 const voicechannels = serwer.channels.cache.filter(channel => channel.type === 'GUILD_VOICE').size;
+
+const verifLevels = {
+    NONE: "None",
+    LOW: "Low",
+    MEDIUM: "Medium",
+    HIGH: "(╯°□°）╯︵  ┻━┻ (High)",
+    VERY_HIGH: "┻━┻ミヽ(ಠ益ಠ)ノ彡┻━┻ (Very High)",
+  };
+
 const tier = serwer.premiumTier
 .replace('NONE', 'Level 0')
 .replace('TIER_1', 'Level 1')
@@ -28,6 +37,7 @@ const infoEmbed = new Discord.MessageEmbed()
 .addField(`>>> ${emotes.guide}・ID:`, `\`\`\`ini\n ${serwer.id} \`\`\``)
 .addField(`>>> ${emotes.members}・Mmbercount:`, `\`\`\`ini\n ${serwer.memberCount} \`\`\``)
 .addField(`>>> ${emotes.bell}・Name`, `\`\`\`ini\n ${serwer.name} \`\`\``)
+.addField(`>>> ${emotes.search}・Verification Lvl`, `\`\`\`ini\n ${verifLevels[serwer.verificationLevel]} \`\`\``)
 .addField(`>>> ${emotes.camera}・Roles`, `\`\`\`ini\n ${serwer.roles.cache.size} \`\`\``)
 .addField(`>>> ${emotes.chat}・Channels`, `\`\`\`ini\n ${serwer.channels.cache.size} all \n→ ${textchannels} text [cache] \n→ ${voicechannels} voice [cache]\`\`\``)
 .addField(`>>> ${emotes.rocket}・Emojis:`, `\`\`\`ini\n ${serwer.emojis.cache.size} \`\`\``)

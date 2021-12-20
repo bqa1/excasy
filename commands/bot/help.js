@@ -47,7 +47,7 @@ run: async(client, message, args) => {
         .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
         .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, reset \`\`\`")
         .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome \`\`\`")
-        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify \`\`\`")
+        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify, animesearch \`\`\`")
         .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\` stats, help, invite, ping \`\`\`")
         .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\` serwer, user, channel, role \`\`\`")
 

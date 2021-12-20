@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const config = require("./config.js");
-
+const moment = require("moment")
+moment.locale("EN")
 const client = new Discord.Client({
   fetchAllMembers: false,
   allowedMentions: {
