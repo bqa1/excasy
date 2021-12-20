@@ -31,6 +31,7 @@ module.exports.run = async (client, message) => {
   `)
   .addField(`> ${emotes.slash_commands}・Prefix`, `\`\`\`${cprefix} || @${client.user.username}\`\`\``)
   .addField(`> ${emotes.connection_great}・Ping`, `\`\`\`${client.ws.ping}\`\`\``)
+  .setImage('https://cdn.discordapp.com/attachments/917145205516427306/922223945543999508/excasybaner.png')
   .setTimestamp()
   .setFooter(
       message.member.displayName,

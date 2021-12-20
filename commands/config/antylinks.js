@@ -3,9 +3,9 @@ const Discord = require("discord.js");
 const db = require('quick.db')
 
 module.exports = {
-    name: "antyinvite",
-    aliases : ["antyzaproszenia"],
-    description: "Enable/Disable antyinvite system",
+    name: "antylink",
+    aliases : ["antylinki"],
+    description: "Enable/Disable antylink system",
     category: "mod",
     cooldown: 5,
     usage: "antyinvite <on/off>",
@@ -41,33 +41,33 @@ module.exports = {
         }
      
             if(select.toLowerCase() == "on"){
-                const database = db.get(`reklama_${message.guild.id}`)
+                const database = db.get(`link_${message.guild.id}`)
                 if(database) {
                     const embed = new Discord.MessageEmbed()
                     .setColor("#2f3136")
                     .setTimestamp()
                     .setTitle("Something went wrong")
-                    .setDescription("antyinvite has already enabled")
+                    .setDescription("antylink has already enabled")
                     return message.reply({embeds: [embed]})
                 }
-                db.set(`reklama_${message.guild.id}`, "tak")
+                db.set(`link_${message.guild.id}`, "tak")
                 const embed = new Discord.MessageEmbed()
                     .setColor("#2f3136")
                     .setTimestamp()
                     .setTitle("Succes")
-                    .setDescription("Enabled antyinvite")
+                    .setDescription("Enabled antylink")
                     return message.reply({embeds: [embed]})
                 
             }
             
             if(select.toLowerCase() == "off"){
-                const database = db.get(`reklama_${message.guild.id}`)
+                const database = db.get(`link_${message.guild.id}`)
                 if(!database) {
                     const embed = new Discord.MessageEmbed()
                     .setColor("#2f3136")
                     .setTimestamp()
                     .setTitle("Something went wrong")
-                    .setDescription("antyinvite has already disabled")
+                    .setDescription("antylink has already disabled")
                     return message.reply({embeds: [embed]})
                 }
                 db.set(`reklama_${message.guild.id}`, "nie")
@@ -75,7 +75,7 @@ module.exports = {
                 .setColor("#2f3136")
                 .setTimestamp()
                 .setTitle("Succes")
-                .setDescription("Disabled antyinvite")
+                .setDescription("Disabled antylink")
                 return message.reply({embeds: [embed]})
         
             }
