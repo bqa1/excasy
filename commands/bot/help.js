@@ -12,15 +12,6 @@ description: "show all commands",
 category: "bot",
 usage: "help (komenda)",
 run: async(client, message, args) => {
-
-    const fs = require('fs')
- const fun = fs.readdirSync(`./commands/4fun`)
- const bot = fs.readdirSync(`./commands/bot`).filter(file => file.endsWith(".js"));
- const config = fs.readdirSync(`./commands/config`).filter(file => file.endsWith(".js"));
- const info = fs.readdirSync(`./commands/info`).filter(file => file.endsWith(".js"));
- const mod  = fs.readdirSync(`./commands/mods`).filter(file => file.endsWith(".js"));
-
-
     if (args[0]) {
         const Command = client.commands.get(args[0]) || client.commands.find(x => x.aliases && x.aliases.includes(args[0]));
 
@@ -45,11 +36,11 @@ run: async(client, message, args) => {
         const helpemb = new Discord.MessageEmbed()
         .setColor("#2f3136")
         .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
-        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, reset \`\`\`")
-        .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome \`\`\`")
-        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify, animesearch \`\`\`")
+        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, ban, reset \`\`\`")
+        .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome, ticket \`\`\`")
+        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify, animesearch, reverse \`\`\`")
         .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\` stats, help, invite, ping \`\`\`")
-        .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\` serwer, user, channel, role \`\`\`")
+        .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\` server, user, channel, role \`\`\`")
 
         .setFooter(`Type ${prefix}help on nsfw channel, for nsfw commands`)
         if(message.channel.nsfw) {
@@ -58,7 +49,5 @@ run: async(client, message, args) => {
         }
 
         message.reply({embeds: [helpemb]})
-
-
     }
 }}
