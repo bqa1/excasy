@@ -24,16 +24,7 @@ module.exports.run = async (client, message) => {
     client.channels.cache.get(channel).send({embeds: [embeds]})
 
 
-    if (message.partial || (message.embeds.length && !message.content)) return;
-
-	client.snipes.set[message.channel.id = {
-		author: message.author,
-		content: message.content,
-		createdAt: message.createdTimestamp,
-		image: message.attachments.first()
-			? message.attachments.first().proxyURL
-			: null,
-	}];
+;
 
 }
 

@@ -23,11 +23,5 @@ module.exports.run = async (client, message, oldMessage, newMessage) => {
     client.channels.cache.get(channel).send({embeds: [embeds]})
 
 
-    if (oldMessage.partial) return; 
-	editSnipes[oldMessage.channel.id] = {
-		author: oldMessage.author,
-		content: oldMessage.content,
-		createdAt: newMessage.editedTimestamp,
-	};
 
 }

@@ -32,41 +32,19 @@ module.exports = {
 					.setLabel('version')
 					.setStyle('PRIMARY'),
 			);
-      const xd = new Discord.MessageEmbed()
-      .setTitle("select menu")
-      .setColor("#2f3136")
-      .setDescription("Press buttons below")
+      
 
-    message.reply({embeds: [xd], components: [row]})
-
-    const filter = i =>  i.user.id === message.author.id
-    const collector = message.channel.createMessageComponentCollector({ filter, time: 1500000 });
-
-    collector.on('collect', async i => {
-      if (i.customId === 'wer') {
-        const eksdi = new Discord.MessageEmbed()
-        .addField("library:", "\`\`\`Discord.js\`\`\`")
-        .addField("library version", `\`\`\`${Discord.version}\`\`\``)
-        .addField("Nodejs version", `\`\`\`${process.version}\`\`\``)
-        .setColor("#2f3136")
-        await i.update({embeds: [eksdi], components: [row]});
-      }
-      if (i.customId === 'stats') {
-     
         const eksdi = new Discord.MessageEmbed()
         .setColor("#2f3136")
         .addField("Servers", `\`\`\`${client.guilds.cache.size}\`\`\``, true)
         .addField("Users", `\`\`\`${client.users.cache.size} cache / ${client.guilds.cache.reduce((prev, guild) => prev + guild.memberCount, 0)} all\`\`\``)
         .addField("Channels", `\`\`\`${client.channels.cache.size}\`\`\``)
         .addField('Uptime', `\`\`\`${moment.duration(client.uptime).humanize()}\`\`\``, true)
-  
-        await i.update({embeds: [eksdi], components: [row]});
-      }
-      
-    });
 
-    
-     
-    
+    message.reply({embeds: [eksdi]})
+
+
+
+
     }
-}
+} 

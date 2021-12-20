@@ -38,6 +38,7 @@ module.exports = {
         let inspected = inspect(evaled, { depth: 0 });
         if (query?.length > 1012) query = query?.substring(0, 1010) + "...";
         if (inspected.toString().length > 1012) inspected = inspected.toString().substring(0, 1010) + "...";
+        message.react("<:emoji_40:921414634626506802>")
         const embedgut = new Discord.MessageEmbed()
         .setTitle("BONK")
             .addField("Input:", `\`\`\`js\n${query}\n\`\`\``)

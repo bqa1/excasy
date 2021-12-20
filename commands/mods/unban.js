@@ -3,9 +3,9 @@ const Discord = require("discord.js");
 const Permissions = require("discord.js")
 
 module.exports = {
-    name: "ban",
-    aliases : ["banned"],
-    description: "ban someone <a:ban:922405494440730655>",
+    name: "unban",
+    aliases : ["ub"],
+    description: "unban someone",
     category: "mod",
     run: async(client, message, args) => {
     
@@ -28,56 +28,39 @@ module.exports = {
         return message.reply({embeds: [perm] });
     
     }
-        const target = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
-    if(!target) {
-      
+        const target = args[0]
+        const bannedMembers = await message.guild.bans.fetch()
+        if(!target) { 
             const perm = new Discord.MessageEmbed()
             .setTitle("Something went wrong")
             .setColor("#2f3136")
-            .setDescription("Mention someone!\nVaild usage: \`[p]ban @someone read rules\`")
+            .setDescription("Provide an ID")
             .setFooter(message.author.tag, message.author.displayAvatarURL())
             return message.reply({embeds: [perm] });
-    }
-    if(target.id === message.author.id) {
-    
-
-            const perm = new Discord.MessageEmbed()
-            .setTitle("Something went wrong")
-            .setColor("#2f3136")
-            .setDescription("you cant ban yourself")
-            .setFooter(message.author.tag, message.author.displayAvatarURL())
-            return message.reply({embeds: [perm] });
-    }
-
-    if(!target.bannable) {
-      
-        const perm = new Discord.MessageEmbed()
-        .setTitle("Something went wrong")
-        .setColor("#2f3136")
-        .setDescription(`I cant ban ${target}`)
-        .setFooter(message.author.tag, message.author.displayAvatarURL())
-        return message.reply({embeds: [perm] });
-    } else {
-
-        let reason = args.slice(1).join(" ");
-        if (!reason) {
-            pow = `Not provied- ${message.author.username}#${message.author.discriminator}`;
-        } else {
-            pow = `${reason} - ${message.author.username}#${message.author.discriminator}`
         }
 
+        if(!bannedMembers.has(target)) { 
+            const perm = new Discord.MessageEmbed()
+            .setTitle("Something went wrong")
+            .setColor("#2f3136")
+            .setDescription("Couldn't find that member in the ban list!")
+            .setFooter(message.author.tag, message.author.displayAvatarURL())
+            return message.reply({embeds: [perm] });
+        }
+  
+          message.guild.members.unban(target)
         const sukces = new Discord.MessageEmbed()
-            .setTitle("MOD SYSTEM | BAN")
+            .setTitle("MOD SYSTEM | Unban")
             .setColor("#2f3136")
             .addField("Moderator", `${message.author}`)
-            .addField("Banned", `${target}`)
+            .addField("Unbanned", `<@${target}>`)
             .addField("Guild", `${message.guild.name}`)
-            .addField("Reason", `${pow}`)
             .setFooter(message.author.tag, message.author.displayAvatarURL())
-            target.send({embeds: [sukces]}).catch(() => { "cannot send message to this user"})
-        await target.ban({reason: pow}).then(() => message.reply({embeds: [sukces]}));
+           target.send({embeds: [sukces]})
+            message.reply({embeds: [sukces]})
+         
     }
     
     
-}
+
 }
