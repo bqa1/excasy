@@ -26,7 +26,7 @@ module.exports = {
 
         }
 
-        let member = message.mentions.members.first()
+        let member = message.mentions.members.first() ||  message.guild.members.cache.get(args[0]);
         let amount = args[1]
         if(!member) { 
             const perm = new Discord.MessageEmbed()

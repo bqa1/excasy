@@ -18,11 +18,11 @@ module.exports = {
             return message.reply({embeds: [perm] });
           
         }
-        if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.MANAGE_MESSAGES))  {
+        if(!message.guild.me.permissions.has(Discord.Permissions.FLAGS.MANAGE_CHANNELS))  {
             const perm = new Discord.MessageEmbed()
                 .setTitle("Something went wrong")
                 .setColor("#2f3136")
-                .setDescription("I dont have \`ADMINISTRATOR\` permissions")
+                .setDescription("I dont have \`MANAGE_CHANNELS\` permissions")
                 .setFooter(message.author.tag, message.author.displayAvatarURL())
             return message.channel.send({embeds: [perm] });
 

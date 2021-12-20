@@ -28,7 +28,7 @@ module.exports = {
         return message.reply({embeds: [perm] });
     
     }
-        const target = message.mentions.members.first()
+        const target = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
     if(!target) {
       
             const perm = new Discord.MessageEmbed()

@@ -128,6 +128,9 @@ module.exports.run = async (client, message) => {
 if(message.content.toLowerCase() === "excasy") {
   message.reply("Hey!")
 }
+if(message.content.toLowerCase().includes === `asked`) {
+  message.reply("im asked")
+}
   if (!message.content.startsWith(Prefix)) return;
   if (!message.member)
     message.member = await message.guild.members.fetch(message);
