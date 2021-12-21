@@ -17,4 +17,6 @@ module.exports.run = async (client, guild) => {
 client.channels.cache.get("921805910375030794").send({embeds: [newguild]})
 
 
+
+
 }

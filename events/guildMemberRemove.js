@@ -28,7 +28,7 @@ const welcome = new MessageEmbed()
 .setColor(`#2f3136`)
 .setImage('https://cdn.discordapp.com/attachments/917145205516427306/921694329788063764/goodbye.png')
 .setDescription(`We hope you will come back to us someday.
-> Only **${member.guild.memberCount}** of us are left.`)
+> Now we have **${member.guild.memberCount}** Members`)
 .setFooter(
     member.displayName,
     member.user.displayAvatarURL({ dynamic: true })
