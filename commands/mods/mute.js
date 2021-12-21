@@ -8,7 +8,7 @@ module.exports = {
   name: "mute",
   aliases : ["supermute"],
   category: "info",
-  description: "mute someone",
+  description: "Returns latency and API ping",
   run: async (client, message, args) => {
 
    if (!message.member.permissions.has(Discord.Permissions.MANAGE_MESSAGES))  {
@@ -90,7 +90,7 @@ module.exports = {
       .addField("Member:", `${user}`)
       .addField("Reason", `\`${args.slice(1).join(" ")}\``)
       .addField("Moderator:", `${message.author}`)
-      .addField("Guild:", `\`${message.guild}\``)
+      .addField("Guild", `${message.guild.name}`)
     user.send({ embeds: [mtembde] }).catch(() => { "cannot send message to this user"})
     message.channel.send({ embeds: [mtembde] });
     user.roles.add(role);

@@ -14,7 +14,6 @@ module.exports = {
                 message.member.displayName,
                 message.author.displayAvatarURL({ dynamic: true })
               )
-            .setTimestamp()
             return message.channel.send({ embeds: [embed1] })
         }
         let rate = Math.floor(Math.random() * (200 - 1 + 1) + 1);
@@ -27,7 +26,6 @@ module.exports = {
             message.member.displayName,
             message.author.displayAvatarURL({ dynamic: true })
           )
-        .setTimestamp()
-        message.channel.send({embeds: [embed] })
+        return message.channel.send({embeds: [embed] })
     }
 }

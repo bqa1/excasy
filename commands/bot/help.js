@@ -36,8 +36,8 @@ run: async(client, message, args) => {
         if (prefix === null) prefix = dPrefix;
         const helpemb = new Discord.MessageEmbed()
         .setColor("#2f3136")
-        .setDescription(`[My prefix is ${prefix}](https://excasy.pl/)`)
-        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, ban, reset, tempmute, mute, unmute, unban, addrole, removerole \`\`\`")
+        .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
+        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, ban, reset, tempmute, mute, unban, unmute \`\`\`")
         .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome, ticket \`\`\`")
         .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify, animesearch, reverse, iq, invert, sus, zalgo \`\`\`")
         .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\` stats, help, invite, ping \`\`\`")
