@@ -35,7 +35,7 @@ module.exports = {
                 .setColor("#2f3136")
                 .setTimestamp()
                 .setTitle("Something went wrong")
-                .setDescription("Muterole has already saved")
+                .setDescription("Muteroled has been saved")
                 return message.reply({embeds: [embed]})
             }
             const channel = message.mentions.roles.first();
@@ -65,7 +65,7 @@ module.exports = {
                 .setColor("#2f3136")
                 .setTimestamp()
                 .setTitle("Something went wrong")
-                .setDescription("Muterole not found")
+                .setDescription("Muterole has alredy deleted")
                 return message.reply({embeds: [embed]})
             }
             db.delete(`modlogs_${message.guild.id}`)
