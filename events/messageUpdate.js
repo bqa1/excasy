@@ -21,13 +21,4 @@ module.exports.run = async (client, message, oldMessage, newMessage) => {
         .setColor("#2f3136")
         .setTimestamp()
     client.channels.cache.get(channel).send({embeds: [embeds]})
-
-
-    if (oldMessage.partial) return; 
-	editSnipes[oldMessage.channel.id] = {
-		author: oldMessage.author,
-		content: oldMessage.content,
-		createdAt: newMessage.editedTimestamp,
 	};
-
-}
