@@ -21,37 +21,7 @@ module.exports = {
         aix: "AIX",
         darwin: "Darwin"
     };
-      const row = new MessageActionRow()
-			.addComponents(
-        new MessageButton()
-        .setCustomId('stats')
-        .setLabel('Stats')
-        .setStyle('PRIMARY'),
-				new MessageButton()
-					.setCustomId('wer')
-					.setLabel('version')
-					.setStyle('PRIMARY'),
-			);
-      const xd = new Discord.MessageEmbed()
-      .setTitle("select menu")
-      .setColor("#2f3136")
-      .setDescription("Press buttons below")
-
-    message.reply({embeds: [xd], components: [row]})
-
-    const filter = i =>  i.user.id === message.author.id
-    const collector = message.channel.createMessageComponentCollector({ filter, time: 1500000 });
-
-    collector.on('collect', async i => {
-      if (i.customId === 'wer') {
-        const eksdi = new Discord.MessageEmbed()
-        .addField("library:", "\`\`\`Discord.js\`\`\`")
-        .addField("library version", `\`\`\`${Discord.version}\`\`\``)
-        .addField("Nodejs version", `\`\`\`${process.version}\`\`\``)
-        .setColor("#2f3136")
-        await i.update({embeds: [eksdi], components: [row]});
-      }
-      if (i.customId === 'stats') {
+     
      
         const eksdi = new Discord.MessageEmbed()
         .setColor("#2f3136")
@@ -60,10 +30,8 @@ module.exports = {
         .addField("Channels", `\`\`\`${client.channels.cache.size}\`\`\``)
         .addField('Uptime', `\`\`\`${moment.duration(client.uptime).humanize()}\`\`\``, true)
   
-        await i.update({embeds: [eksdi], components: [row]});
-      }
-      
-    });
+        await message.reply({embeds: [eksdi]});
+    
 
     
      

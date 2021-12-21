@@ -71,8 +71,8 @@ module.exports = {
             .setColor("#2f3136")
             .addField("Moderator", `${message.author}`)
             .addField("Banned", `${target}`)
-            .addField("Reason", `${pow}`)
-            .addfield("Guild:", `\`${message.guild}\``)
+            .addField("Reason", `\`${args.slice(1).join(" ")}\``)
+            .addField("Guild:", `\`${message.guild}\``)
             .setFooter(message.author.tag, message.author.displayAvatarURL())
             target.send({embeds: [sukces]}).catch(() => { "cannot send message to this user"})
         await target.ban({reason: pow}).then(() => message.reply({embeds: [sukces]}));

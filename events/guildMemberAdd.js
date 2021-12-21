@@ -4,12 +4,12 @@ const moment = require("moment");
 
 module.exports.run = async (client,  member) => {
 
-    
     const dat = await db.fetch(`modlogs_${member.guild.id}`)
     if (!dat) return
     const cannel = dat.id
     if(!cannel) { return; }
-  
+    
+
     const newuser = new MessageEmbed()
     .setColor("#2f3136")
     .setTitle("LOGS | Member add")
@@ -37,7 +37,7 @@ const welcome = new MessageEmbed()
     member.user.displayAvatarURL({ dynamic: true })
 )
 .setTimestamp()
-client.channels.cache.get(cannel).send({embeds: [welcome] })
+client.channels.cache.get(channel).send({embeds: [welcome] })
 
 
   const dmembed = new MessageEmbed()
@@ -47,8 +47,13 @@ client.channels.cache.get(cannel).send({embeds: [welcome] })
 .setFooter("Powered by excasy")
   member.send({embeds: [dmembed]}).catch(() => { 
       return;
-  })
+
+ 
+})
+
+
+  }
 
 
     
-  }
+  

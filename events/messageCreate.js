@@ -13,6 +13,10 @@ const emotes = require("../emotes.json")
 const { prefix: dPrefix } = require("../config");
 const config = require("../config.js")
 module.exports.run = async (client, message) => {
+
+
+
+
     global.modlogs = db.fetch(`modlogs_${message.guild.id}`)
     if (message.author.bot) return;
  
@@ -46,6 +50,7 @@ module.exports.run = async (client, message) => {
       message.reply("helo!")
   }
 
+  
   const reklama = ["discord.gg/", "discord.com"]
 
   for (var i in reklama) {
@@ -120,7 +125,6 @@ module.exports.run = async (client, message) => {
         
       }
 
-
   if (!message.guild) return;
 
 if(message.content.toLowerCase() === "excasy") {
@@ -178,10 +182,12 @@ const cmd = new Discord.MessageEmbed()
       }
     }
 
+
+   
       try {
           if (command) command.run(client, message, args)
       }  catch (err) {
         console.log("błąd! " + err)
               }
       
-          }
+            }

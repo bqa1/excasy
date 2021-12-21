@@ -10,6 +10,7 @@ name: "help",
 aliases : ["pomoc", "h", "p"],
 description: "show all commands",
 category: "bot",
+cooldown: 5,
 usage: "help (komenda)",
 run: async(client, message, args) => {
     if (args[0]) {
@@ -35,10 +36,10 @@ run: async(client, message, args) => {
         if (prefix === null) prefix = dPrefix;
         const helpemb = new Discord.MessageEmbed()
         .setColor("#2f3136")
-        .setDescription(`[My prefix is ${prefix}](https://excasy.pl/commands)`)
-        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, ban, reset, tempmute, mute, unmute, unban \`\`\`")
+        .setDescription(`[My prefix is ${prefix}](https://excasy.pl/)`)
+        .addField(`>>> ${emotes.certified_moderator}・Mod`, "\n\`\`\` clear, clearm, ban, reset, tempmute, mute, unmute, unban, addrole, removerole \`\`\`")
         .addField(`>>> ${emotes.settings}・Conifg`, "\n\`\`\` prefix, antyinvite, antylink, modlog, welcome, ticket \`\`\`")
-        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify, animesearch, reverse, iq, invert, sus \`\`\`")
+        .addField(`>>> ${emotes.like}・4fun`, "\n\`\`\` id, emojify, animesearch, reverse, iq, invert, sus, zalgo \`\`\`")
         .addField(`>>> ${emotes.sticker}・Bot`, "\n\`\`\` stats, help, invite, ping \`\`\`")
         .addField(`>>> ${emotes.rules}・Info`, "\n\`\`\` server, user, channel, role \`\`\`")
 

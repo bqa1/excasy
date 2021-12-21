@@ -15,7 +15,7 @@ module.exports = {
             const perm = new Discord.MessageEmbed()
             .setTitle("Something went wrong")
             .setColor("#2f3136")
-            .setDescription("You dont have permissions")
+            .setDescription("You dont have \`ADMINISTRATOR\` permissions")
             .setFooter(message.author.tag, message.author.displayAvatarURL())
             return message.reply({embeds: [perm] });
           
@@ -24,7 +24,7 @@ module.exports = {
             const perm = new Discord.MessageEmbed()
                 .setTitle("Something went wrong")
                 .setColor("#2f3136")
-                .setDescription("I dont have \`manage messages\` permissions")
+                .setDescription("I dont have \`MANAGE_MESSAGES\` permissions")
                 .setFooter(message.author.tag, message.author.displayAvatarURL())
             return message.channel.send({embeds: [perm] });
 

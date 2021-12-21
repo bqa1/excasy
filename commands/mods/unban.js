@@ -56,7 +56,6 @@ module.exports = {
             .addField("Unbanned", `<@${target}>`)
             .addField("Guild", `${message.guild.name}`)
             .setFooter(message.author.tag, message.author.displayAvatarURL())
-           target.send({embeds: [sukces]})
             message.reply({embeds: [sukces]})
          
     }

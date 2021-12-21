@@ -2,7 +2,7 @@ const db = require('quick.db')
 const { MessageEmbed } = require('discord.js')
 const moment = require("moment");
 
-moment.locale("PL");module.exports.run = async (client, oldChannel, newChannel) => {
+module.exports.run = async (client, oldChannel, newChannel) => {
 
     const data = await db.fetch(`modlogs_${oldChannel.guild.id}`)
     if (!data) return
