@@ -1,14 +1,10 @@
-const mongoose = require("mongoose")
-const { mongo } = require("../config.js")
-module.exports.run = async (client) => {
+const config = require("../config.js");
+const {MessageEmbed} = require("discord.js");
 
-    console.log(`[CLIENT] ${client.user.username} starting`);
-     client.user.setActivity(`My prefix is .`, {type: "PLAYING"})
+module.exports.run = (client) => {
+  console.log(`${client.user.username} ✅`)
 
-mongoose.connect(`${mongo}`, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true,
-  })
-  .then(console.log("[DATABASE 2] Connected to database!"));
+    client.user.setActivity("Rozwijam się!", { type: "LISTENING"});
+
 
 }
