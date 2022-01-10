@@ -4,7 +4,8 @@ const { MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'shard',
-    description: 'komendy bota',
+    aliases: ['shards'],
+    description: 'Informnacje o shardach',
     run: async(client, msg, args) => {
 
       const table = new AsciiTable()

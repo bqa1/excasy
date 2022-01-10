@@ -8,11 +8,11 @@ const manager = new Discord.ShardingManager('./app.js', {
   token: token,
   autoSpawn: true,
   totalShards: 'auto',
-  totalShards: 2
+  totalShards: 4
 });
 
 manager.spawn()
-manager.on('shardCreate', shard => console.log(`[SHARD] starting shard #${shard.id} [${new Date()}]`));
+manager.on('shardCreate', shard => console.log(`Startujemy sharda #${shard.id}! [${new Date()}]`));
 
 process.on("unhandledRejection", (reason, promise, message) => {
 
