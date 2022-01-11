@@ -1,34 +1,23 @@
 const {Permissions} = require("discord.js")
 const Discord = require("discord.js")
 const { MessageEmbed, MessageButton, MessageActionRow } = require("discord.js");
-module.exports.run = async (client, interaction) => {
-
-
+module.exports.run = async (client, interaction, args) => {
 
 
     if (interaction.isCommand()) {
 
-        await interaction.deferReply({ ephemeral: false }).catch(() => {});
+ //       await interaction.deferReply({ ephemeral: false }).catch(() => {});
 
-        const cmd = client.slashCommands.get(interaction.commandName);
-
-
-        for (let option of interaction.options.data) {
+        const cmd = client.slash.get(interaction.commandName);
 
 
-            if (option.type === "SUB_COMMAND") {
-                if (option.name) args.push(option.name);
-                option.options?.forEach((x) => {
-                    if (x.value) args.push(x.value);
-                });
-            } else if (option.value) args.push(option.value);
-        }
    
 
-        cmd.run(client, interaction, args);
+        cmd.run(client, interaction);
     }
 
-    await interaction.deferUpdate();
+
+
     if (interaction.isButton()) {
         if (interaction.customId === 'tic') {
    
@@ -74,4 +63,5 @@ module.exports.run = async (client, interaction) => {
             }      
         }
       }
+
   }

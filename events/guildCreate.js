@@ -14,7 +14,7 @@ module.exports.run = async (client, guild) => {
 .addField("owner", `${owner}`)
 .addField("Membercount", `${guild.memberCount}`)
 
-client.channels.cache.get("921805910375030794").send({embeds: [newguild]})
+//client.channels.cache.get("921805910375030794").send({embeds: [newguild]})
 
 
 

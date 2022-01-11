@@ -24,7 +24,7 @@ module.exports.run = async (client, message) => {
   const Prefix = message.content.match(mentionRegexPrefix) ? message.content.match(mentionRegexPrefix)[0] : cprefix
 
   const ping = new MessageEmbed()
-  .setColor(`#2f3136`)
+  .setColor(`#01FE81`)
   .setAuthor('Ktoś mnie oznaczył?', `${message.author.displayAvatarURL({dynamic: true})}`)
 
   .addField(`${emotes.check}・Może troszkę o mnie?`, `
@@ -33,7 +33,11 @@ module.exports.run = async (client, message) => {
 
   .addField(`${emotes.support}・Informacje:`,`
   > Mój prefix na tym serwerze: **${cprefix}**
-  > Mój globalny prefix: **.**`)
+  > Mój główny prefix: **.**
+  > moim prefix też jest **@wzmianka** 
+  > Posiadam rówież **slash (/)** komendy
+ `)
+
 
   .addField(`${emotes.info}・Statystyki:`, `
   > Jestem na **${client.guilds.cache.size}** serwerach, na których jest łącznie **${client.users.cache.size} użytkowników!**

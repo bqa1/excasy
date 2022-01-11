@@ -23,8 +23,9 @@ client.player = player
 client.snipes = new Discord.Collection();
 client.cooldowns = new Discord.Collection();
 client.commands = new Discord.Collection();
+client.slash = new Discord.Collection();
 client.aliases = new Discord.Collection();
-["commands", "events"].forEach(handler => {
+["commands", "events", "slash"].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 });
 client.login(config.token)

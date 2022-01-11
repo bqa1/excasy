@@ -62,7 +62,7 @@ const embed = new MessageEmbed()
 .addFields(categories)
 .setColor('#2f3136')
 .setTimestamp()
-.setFooter(`${msg.author.tag}`,
+.setFooter(`te same komendy posiadają slashe! ${msg.author.tag}`,
 msg.author.displayAvatarURL({ dynamic: true }))
 
 return msg.reply({embeds: [embed] })
