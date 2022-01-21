@@ -23,4 +23,7 @@ module.exports = class MiscUtils {
     if (everyWord) return string.split(' ').map(capitalizeWord).join(' ')
     return capitalizeWord(string)
   }
+  static randomselect (string) {
+   string[Math.floor(Math.random() * string.length)]
+  }
 }

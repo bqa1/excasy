@@ -10,7 +10,7 @@ module.exports.run = async (client, message) => {
     if (!data) return
     const channel = data.id
     if(!channel) { return; }
-    if (!message.author || message.author.bot) {
+    if (!message.author || message.author.bot ) {
         return;
     }
     const embeds = new MessageEmbed()
@@ -18,22 +18,12 @@ module.exports.run = async (client, message) => {
         .addField("Channel", `\`#${message.channel.name}\``)
         .addField('Message', `\`${message.content || "-"}\``)
         .addField("Author", `\`${message.author.username} (${message.author.id})\``)
-        .addField("ID", `\`${message.id}\``)
         .setColor("#2f3136")
         .setTimestamp()
     client.channels.cache.get(channel).send({embeds: [embeds]})
 
 
-    if (message.partial || (message.embeds.length && !message.content)) return;
 
-	client.snipes.set[message.channel.id = {
-		author: message.author,
-		content: message.content,
-		createdAt: message.createdTimestamp,
-		image: message.attachments.first()
-			? message.attachments.first().proxyURL
-			: null,
-	}];
 
 }
 

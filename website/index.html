@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>excasy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="shotrcut icon" href="assetss/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assetss/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <meta name="keywords" content="discord, Discord, excasy, bot, wielofunkcyjny, free bost, super duper zajebisty bot">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <meta property="twitter:title" content="excasy.pl">
+    <meta property="twitter:description" content="Discord bot with logs, automod, welcome & more ">
+    <meta property="theme-color" content="#4e5d94">
+    <meta property="og:image" content="assetss/logo.png" />
+
+    
+</head>
+
+<nav id="nav">
+
+    <div id="navtext-div">
+    
+    <a id="navtext">Main page</a>
+      
+      
+    <a  id="navtext">Commands (soon)</a>
+
+    <a href="stats.html" id="navtext">Stats</a>
+    
+    </div>
+    
+    </nav>
+
+
+<body>
+    <div id="container">
+        <div id="navbar" style="display: flex;">
+        </div>
+    
+        <div id="most">
+            <span class="header">soon</span>
+
+            <code>
+                <span class="headeropis"><span class="gut">  
+                <li><span id="d"></span>d</li> <li><span id="h"></span>m</li>  <li><span id="m"></span>M</li>  <li><span id="s"></span>s</li>
+            </span></span>
+                           </code>
+ 
+        
+                <script>
+                    const second = 1000,
+                        minute = second * 60,
+                        hour = minute * 60,
+                        day = hour * 24;
+        
+                    let countDown = new Date('March 1, 2022 00:00:00').getTime(),
+                        x = setInterval(function () {
+        
+                            let now = new Date().getTime(),
+                                distance = countDown - now;
+        
+                            document.getElementById('d').innerText = Math.floor(distance / (day)),
+                                document.getElementById('h').innerText = Math.floor((distance % (day)) / (hour)),
+                                document.getElementById('m').innerText = Math.floor((distance % (hour)) / (minute)),
+                                document.getElementById('s').innerText = Math.floor((distance % (minute)) / second);
+        
+                        }, second)
+                </script>
+      <!--   <a href="https://excasy.pl/invite"><button id="button1">invite</button></a>  
+       <a href="https://excasy.pl/support"><button id="button2">Support</button></a> -->
+        </div>
+
+<body>
+

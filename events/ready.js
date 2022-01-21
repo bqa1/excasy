@@ -1,10 +1,16 @@
-const config = require("../config.js");
-const {MessageEmbed} = require("discord.js");
+const mongoose = require("mongoose")
+const { mongo } = require("../config.js")
+const config = require('../config.js');
+const webhookClient = new Discord.WebhookClient(config.webhook_id, config.webhook_url);
+const MessageEmbed = require("discord.js")
+module.exports.run = async (client) => {
 
-module.exports.run = (client) => {
-  console.log(`${client.user.username} ✅`)
-
-    client.user.setActivity("Rozwijam się!", { type: "LISTENING"});
-
+    console.log(`[CLIENT] ${client.user.username} ready`);
+    client.user.setActivity("Prefix: . || Beta!",{
+      type: "STREAMING",
+      url: "https://www.twitch.tv/excasy"
+  });
+ 
+  
 
 }

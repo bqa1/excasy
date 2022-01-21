@@ -41,7 +41,7 @@ module.exports = {
         const embed = new MessageEmbed()
             .setColor('#2f3136')
             .setTimestamp()
-            .setFooter(`${message.guild.name}`, `${message.guild.iconURL({ dynamic: true })}`)
+            .setFooter(`${message.guild.name}`)
             .setDescription(`${description}`)
             .setTitle('Create ticket 📝')
             

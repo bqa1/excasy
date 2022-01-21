@@ -1,0 +1,1835 @@
+{
+    "name": "Serwer użytkownika TmTx",
+    "verificationLevel": "NONE",
+    "explicitContentFilter": "DISABLED",
+    "defaultMessageNotifications": "ALL_MESSAGES",
+    "afk": null,
+    "widget": {
+        "channel": null
+    },
+    "channels": {
+        "categories": [
+            {
+                "name": "Voice Channels",
+                "permissions": [],
+                "children": [
+                    {
+                        "type": "GUILD_VOICE",
+                        "name": "General",
+                        "bitrate": 64000,
+                        "userLimit": 0,
+                        "parent": "Voice Channels",
+                        "permissions": []
+                    }
+                ]
+            },
+            {
+                "name": "Text Channels",
+                "permissions": [],
+                "children": [
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "general",
+                        "nsfw": true,
+                        "rateLimitPerUser": 0,
+                        "parent": "Text Channels",
+                        "topic": null,
+                        "permissions": [
+                            {
+                                "roleName": "@everyone",
+                                "allow": "0",
+                                "deny": "2112"
+                            }
+                        ],
+                        "messages": [
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup create",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "Please wait `0.7` more seconds before using `backup`!",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup create",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "select `create/load/info/delete`!",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "const cooldowns = new Map()",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".backup",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".redeem uj",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "Please Specify a code to redeem",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".redeem",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".redeem",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "xd",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "No i tak robię xd",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Zmienił bym nazwę z polska na Zjednoczone Emiraty bydgostkie",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Serwer się wyjebał",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "A jak na hostingu to powinieneś tylko włączyć serwer",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Jak na kompie masz to tylko wpisujesz mode .",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "A ty to masz na kompie czy na hostingu?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "A shardy włączają app",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Site włącza shardy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Index na site",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "było ustawione",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "A jak je włączyć xd?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Bo inaczej stats i shards nie będzie działać",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Włączaj shardy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Tak",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "Włączyłem tylko app a co to źle?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": null,
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": ">>> <:compass:896430962194386974>・Name",
+                                                "value": "```[BETA] excasy```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:plus:896430962320244746>・ID",
+                                                "value": "```933071475030765589```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:shop:896430962425077770>・Mentionable?",
+                                                "value": "```No```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:text_channel:896430962437668975>・Position",
+                                                "value": "```1```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:cross:896430962269909043>・Color",
+                                                "value": "```#000000```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:line:896430962290872350>・Users with this role",
+                                                "value": "```1```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:rocket:896430962001453119>・Created",
+                                                "value": "```wtorek, 18 stycznia 2022 12:52```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": {
+                                            "name": "[BETA] excasy"
+                                        },
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".role @[BETA] excasy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "Command not found",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".rolę @[BETA] excasy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong...",
+                                        "type": "rich",
+                                        "description": "Mention roleor give ID!",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".role",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Włączyłeś edcasy przez app a nie shardy?",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "@​TmTx",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Kuhwa",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".shard",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".shard",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": null,
+                                        "type": "rich",
+                                        "description": "[My prefix is .](https://excasy.pl/)",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": ">>> <:certified_moderator:896430962177622086>・Mod",
+                                                "value": "``` clear, clearm, ban, reset, tempmute, mute, unmute, unban, addrole, delrole, lock, unlock ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:settings:896430962320232469>・Conifg",
+                                                "value": "``` prefix, antyinvite, antylink, modlog, welcome, ticket ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:like:896430962521563166>・4fun",
+                                                "value": "``` id, emojify, animesearch, reverse, iq, invert, sus, zalgo, meme, 8ball, discrim, ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:sticker:896430962341187634>・Bot",
+                                                "value": "``` stats, help, invite, ping, shard ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:rules:896430962345390110>・Info",
+                                                "value": "``` server, user, channel, role ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:compass:896430962194386974>・Nsfw",
+                                                "value": "``` anal, ass, gif, pussy, hentai, boobs, solo, gonewild ```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".help",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": null,
+                                        "type": "rich",
+                                        "description": "`[BETA] excasy` - This is the new Discord Bot, that\n  will add new features to your server!",
+                                        "url": null,
+                                        "timestamp": "2022-01-18T22:40:14.498Z",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "> <:slash_commands:896430962391543829>・Prefix",
+                                                "value": "```. || @[BETA] excasy```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "> <:connection_great:896430962303442944>・Ping",
+                                                "value": "```51```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": {
+                                            "url": "https://cdn.discordapp.com/attachments/917145205516427306/922223945543999508/excasybaner.png",
+                                            "proxyURL": "https://media.discordapp.net/attachments/917145205516427306/922223945543999508/excasybaner.png",
+                                            "height": 1080,
+                                            "width": 1920
+                                        },
+                                        "author": {
+                                            "name": "Someone tagged me?",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp"
+                                        },
+                                        "footer": {
+                                            "text": "bqa",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "@​[BETA] excasy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".stats",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".stats",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Kto to maza",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "co",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Discriminator search",
+                                        "type": "rich",
+                                        "description": "Found `2` users [this shard cache] with discriminator `0001`",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Users",
+                                                "value": "```TmTx#0001\nMaza#0001```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".disc 0001",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Discriminator search",
+                                        "type": "rich",
+                                        "description": "Found `1` users [this shard cache] with discriminator `0414`",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Users",
+                                                "value": "```bqa#0414```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".disc 0414",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "Provide an discriminator",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".disc",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "Successfully added <a:wavegif:933128265055490119>!",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "wavegif",
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": "https://discordemoji.com/emoji/wavegif_1860",
+                                        "timestamp": null,
+                                        "color": 65535,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": {
+                                            "url": "https://discordemoji.com/assets/emoji/wavegif_1860.gif",
+                                            "proxyURL": "https://images-ext-2.discordapp.net/external/Rp4BSDrCoiEy_wsEiOvcl7Jd01CiDZ7akRn0Or83_s8/https/discordemoji.com/assets/emoji/wavegif_1860.gif",
+                                            "height": 700,
+                                            "width": 700
+                                        },
+                                        "author": null,
+                                        "footer": {
+                                            "text": "Emoji 7/8"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".fe gif",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "minecraftnope",
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": "https://discordemoji.com/emoji/minecraftnope",
+                                        "timestamp": null,
+                                        "color": 65535,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": {
+                                            "url": "https://discordemoji.com/assets/emoji/minecraftnope.png",
+                                            "proxyURL": "https://images-ext-1.discordapp.net/external/3dcwVwm6zFEtztbAxjBsXNg0cVm4TbkQSh46GZOlSxs/https/discordemoji.com/assets/emoji/minecraftnope.png",
+                                            "height": 128,
+                                            "width": 128
+                                        },
+                                        "author": null,
+                                        "footer": {
+                                            "text": "Emoji 7/12"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".fe minecraft",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "<:discordpoop:932964509381951509>",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "PONG!",
+                                        "type": "rich",
+                                        "description": "BOT: `48ms`",
+                                        "url": null,
+                                        "timestamp": "2022-01-18T22:37:10.502Z",
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".ping",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "ERROR",
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 5135764,
+                                        "fields": [
+                                            {
+                                                "name": "Input:",
+                                                "value": "```js\nclient.shard.fetchClientValues(\"es.ping\")\n```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Output:",
+                                                "value": "```js\nCannot read property 'fetchClientValues' of null\n```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".e client.shard.fetchClientValues(\"es.ping\")",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "ERROR",
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 5135764,
+                                        "fields": [
+                                            {
+                                                "name": "Input:",
+                                                "value": "```js\nclient.config.prefix\n```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Output:",
+                                                "value": "```js\nCannot read property 'prefix' of undefined\n```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".e client.config.prefix",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "Command not found",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".code",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Cannon read property",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Mi błąd",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "wypierdala",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Czemu te gówno z modeli Mongo",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "I cant ban <@757308157855793232>",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".ban @​[BETA] excasy",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "you cant ban yourself",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".ban @​bqa",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "I cant ban <@918865542746632254>",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".ban @​TmTx",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Something went wrong",
+                                        "type": "rich",
+                                        "description": "Mention someone!\nVaild usage: `[p]ban @someone read rules`",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".ban",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "okok",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "Daje yt premium i music premium za free",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "jutro zrobię lepszy wygląd kodu",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Co to",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "Narazie to mecze się z vanced Youtube",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "LOGS | EDIT MESSAGE",
+                                        "type": "rich",
+                                        "description": null,
+                                        "url": null,
+                                        "timestamp": "2022-01-18T22:33:32.846Z",
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": "Channel",
+                                                "value": "`<#929768772955435072>`",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Link",
+                                                "value": "[click!](https://discord.com/channels/929768772955435069/929768772955435072/933126916691611689)",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "New message",
+                                                "value": "`Daj je do interactionCreate`",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Old message",
+                                                "value": "`Daj je do interactionCreate`",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "Author",
+                                                "value": "`bqa (748479606457237554)`",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": "ID",
+                                                "value": "`933126916691611689`",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "Bo normalnie ja miałem w messageevent już zrobione",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Daj je do interactionCreate",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "Coś z buttonami",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": null,
+                                        "type": "rich",
+                                        "description": "[My prefix is .](https://excasy.pl/)",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 3092790,
+                                        "fields": [
+                                            {
+                                                "name": ">>> <:certified_moderator:896430962177622086>・Mod",
+                                                "value": "``` clear, clearm, ban, reset, tempmute, mute, unmute, unban, addrole, delrole, lock, unlock ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:settings:896430962320232469>・Conifg",
+                                                "value": "``` prefix, antyinvite, antylink, modlog, welcome, ticket ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:like:896430962521563166>・4fun",
+                                                "value": "``` id, emojify, animesearch, reverse, iq, invert, sus, zalgo, meme, 8ball, discrim, ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:sticker:896430962341187634>・Bot",
+                                                "value": "``` stats, help, invite, ping, shard ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:rules:896430962345390110>・Info",
+                                                "value": "``` server, user, channel, role ```",
+                                                "inline": false
+                                            },
+                                            {
+                                                "name": ">>> <:compass:896430962194386974>・Nsfw",
+                                                "value": "``` anal, ass, gif, pussy, hentai, boobs, solo, gonewild ```",
+                                                "inline": false
+                                            }
+                                        ],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": null
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".help",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Snake Game",
+                                        "type": "rich",
+                                        "description": "**Game Over\nScore: **0\n\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🍎⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛💀⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 5793266,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "bqa#0414",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/748479606457237554/4ef3e71fb690d0fdd57d60bae6aefb9f.webp"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": ".snake",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "Jaki",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "xd",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": "Api error",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "[BETA] excasy",
+                                "avatar": "https://cdn.discordapp.com/avatars/757308157855793232/17b5604f86b8d833b181492f10e82519.webp",
+                                "content": "",
+                                "embeds": [
+                                    {
+                                        "title": "Snake Game",
+                                        "type": "rich",
+                                        "description": "**Game Over\nScore: **0\n\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🍎⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛💀⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛\n⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛",
+                                        "url": null,
+                                        "timestamp": null,
+                                        "color": 5793266,
+                                        "fields": [],
+                                        "thumbnail": null,
+                                        "image": null,
+                                        "author": null,
+                                        "footer": {
+                                            "text": "TmTx#0001",
+                                            "icon_url": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.gif"
+                                        }
+                                    }
+                                ],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "TmTx",
+                                "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                                "content": ".snake",
+                                "embeds": [],
+                                "files": [],
+                                "pinned": false
+                            },
+                            {
+                                "username": "bqa",
+                                "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                                "content": "",
+                                "embeds": [],
+                                "files": [
+                                    {
+                                        "name": "PicsArt_08-24-08.09.28.jpg",
+                                        "attachment": "https://cdn.discordapp.com/attachments/929768772955435072/933135479757471754/PicsArt_08-24-08.09.28.jpg"
+                                    }
+                                ],
+                                "pinned": false
+                            }
+                        ],
+                        "isNews": false,
+                        "threads": []
+                    },
+                    {
+                        "type": "GUILD_TEXT",
+                        "name": "logi",
+                        "nsfw": false,
+                        "rateLimitPerUser": 0,
+                        "parent": "Text Channels",
+                        "topic": null,
+                        "permissions": [],
+                        "messages": [],
+                        "isNews": false,
+                        "threads": []
+                    }
+                ]
+            }
+        ],
+        "others": [
+            {
+                "type": "GUILD_TEXT",
+                "name": "ticket-748479606457237554",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": "Ticket created by: 748479606457237554",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "messages": [
+                    {
+                        "username": "bqa",
+                        "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                        "content": "jest, ale sie zjebalo",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "TmTx",
+                        "avatar": "https://cdn.discordapp.com/avatars/918865542746632254/a_95d1e779233be6a9acac037b0af2ff57.webp",
+                        "content": "Wiadomość na ticket się przyda",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    },
+                    {
+                        "username": "bqa",
+                        "avatar": "https://cdn.discordapp.com/avatars/748479606457237554/15ba6d184268d947e6f298553d97ec5f.webp",
+                        "content": "huj",
+                        "embeds": [],
+                        "files": [],
+                        "pinned": false
+                    }
+                ],
+                "isNews": false,
+                "threads": []
+            },
+            {
+                "type": "GUILD_TEXT",
+                "name": "ticket-918865542746632254",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": "Ticket created by: 918865542746632254",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "messages": [],
+                "isNews": false,
+                "threads": []
+            },
+            {
+                "type": "GUILD_TEXT",
+                "name": "ticket-918865542746632254",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": "Ticket created by: 918865542746632254",
+                "permissions": [
+                    {
+                        "roleName": "@everyone",
+                        "allow": "0",
+                        "deny": "1024"
+                    }
+                ],
+                "messages": [
+                    {
+                        "username": "Twójbot",
+                        "avatar": "https://cdn.discordapp.com/embed/avatars/2.png",
+                        "content": "||@​TmTx||",
+                        "embeds": [
+                            {
+                                "title": "Ticket 📋",
+                                "type": "rich",
+                                "description": "> Thank you for contacting our team TmTx.\n                > **Describe your problem in detail.**\n                > We will try to answer as soon as possible!",
+                                "url": null,
+                                "timestamp": "2022-01-17T16:25:21.345Z",
+                                "color": 3092790,
+                                "fields": [],
+                                "thumbnail": null,
+                                "image": null,
+                                "author": null,
+                                "footer": null
+                            }
+                        ],
+                        "files": [],
+                        "pinned": false
+                    }
+                ],
+                "isNews": false,
+                "threads": []
+            },
+            {
+                "type": "GUILD_TEXT",
+                "name": "huj",
+                "nsfw": false,
+                "rateLimitPerUser": 0,
+                "parent": null,
+                "topic": null,
+                "permissions": [],
+                "messages": [],
+                "isNews": false,
+                "threads": []
+            }
+        ]
+    },
+    "roles": [
+        {
+            "name": "nowa rola",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698660937",
+            "mentionable": false,
+            "position": 2,
+            "isEveryone": false
+        },
+        {
+            "name": "@everyone",
+            "color": "#000000",
+            "hoist": false,
+            "permissions": "1071698660929",
+            "mentionable": false,
+            "position": 0,
+            "isEveryone": true
+        }
+    ],
+    "bans": [],
+    "emojis": [
+        {
+            "name": "IconLive",
+            "url": "https://cdn.discordapp.com/emojis/931956089187074099.png"
+        },
+        {
+            "name": "IconInteraction",
+            "url": "https://cdn.discordapp.com/emojis/931956090772537385.png"
+        },
+        {
+            "name": "IconLink",
+            "url": "https://cdn.discordapp.com/emojis/931956090873213018.png"
+        },
+        {
+            "name": "error",
+            "url": "https://cdn.discordapp.com/emojis/931956090898366565.png"
+        },
+        {
+            "name": "IconGaming",
+            "url": "https://cdn.discordapp.com/emojis/931956090910945330.png"
+        },
+        {
+            "name": "IconInsights",
+            "url": "https://cdn.discordapp.com/emojis/931956091040964628.png"
+        },
+        {
+            "name": "def",
+            "url": "https://cdn.discordapp.com/emojis/931956091179401247.png"
+        },
+        {
+            "name": "IconFood",
+            "url": "https://cdn.discordapp.com/emojis/931956091280064572.png"
+        },
+        {
+            "name": "gears",
+            "url": "https://cdn.discordapp.com/emojis/931956091309412434.png"
+        },
+        {
+            "name": "IconMore",
+            "url": "https://cdn.discordapp.com/emojis/931956091376500758.png"
+        },
+        {
+            "name": "IconModeration",
+            "url": "https://cdn.discordapp.com/emojis/931956091644936252.png"
+        },
+        {
+            "name": "IconNewsNSFW",
+            "url": "https://cdn.discordapp.com/emojis/931956091649163286.png"
+        },
+        {
+            "name": "IconMusic",
+            "url": "https://cdn.discordapp.com/emojis/931956091682701342.png"
+        },
+        {
+            "name": "err",
+            "url": "https://cdn.discordapp.com/emojis/931956091795955712.png"
+        },
+        {
+            "name": "IconNews",
+            "url": "https://cdn.discordapp.com/emojis/931956091833712710.png"
+        },
+        {
+            "name": "IconObject",
+            "url": "https://cdn.discordapp.com/emojis/931956091842093086.png"
+        },
+        {
+            "name": "IconNewsPrivate",
+            "url": "https://cdn.discordapp.com/emojis/931956091871445083.png"
+        },
+        {
+            "name": "IconNature",
+            "url": "https://cdn.discordapp.com/emojis/931956091888230431.png"
+        },
+        {
+            "name": "IconPrivacy",
+            "url": "https://cdn.discordapp.com/emojis/931956091934347325.png"
+        },
+        {
+            "name": "IconNew",
+            "url": "https://cdn.discordapp.com/emojis/931956091938541588.png"
+        },
+        {
+            "name": "IconPublicSecurity",
+            "url": "https://cdn.discordapp.com/emojis/931956091942744135.png"
+        },
+        {
+            "name": "IconPublic",
+            "url": "https://cdn.discordapp.com/emojis/931956091976314970.png"
+        },
+        {
+            "name": "IconSettings",
+            "url": "https://cdn.discordapp.com/emojis/931956092026622002.png"
+        },
+        {
+            "name": "IconVoicePrivate",
+            "url": "https://cdn.discordapp.com/emojis/931956092081147945.gif"
+        },
+        {
+            "name": "IconSlowmode",
+            "url": "https://cdn.discordapp.com/emojis/931956092085338122.png"
+        },
+        {
+            "name": "IconRulesGuidelines",
+            "url": "https://cdn.discordapp.com/emojis/931956092085358652.png"
+        },
+        {
+            "name": "IconTravel",
+            "url": "https://cdn.discordapp.com/emojis/931956092093747281.gif"
+        },
+        {
+            "name": "IconsNo",
+            "url": "https://cdn.discordapp.com/emojis/931956092118892625.png"
+        },
+        {
+            "name": "IconThread",
+            "url": "https://cdn.discordapp.com/emojis/931956092139864065.gif"
+        },
+        {
+            "name": "IconStore",
+            "url": "https://cdn.discordapp.com/emojis/931956092165042187.png"
+        },
+        {
+            "name": "IconText2",
+            "url": "https://cdn.discordapp.com/emojis/931956092206972938.png"
+        },
+        {
+            "name": "IconSettings2",
+            "url": "https://cdn.discordapp.com/emojis/931956092215390248.png"
+        },
+        {
+            "name": "IconTextPrivate",
+            "url": "https://cdn.discordapp.com/emojis/931956092269903972.png"
+        },
+        {
+            "name": "KEKW",
+            "url": "https://cdn.discordapp.com/emojis/931956092316045363.png"
+        },
+        {
+            "name": "IconTextNSFW",
+            "url": "https://cdn.discordapp.com/emojis/931956092337025064.png"
+        },
+        {
+            "name": "IconTV",
+            "url": "https://cdn.discordapp.com/emojis/931956092370583593.gif"
+        },
+        {
+            "name": "IconVoice",
+            "url": "https://cdn.discordapp.com/emojis/931956092408315964.gif"
+        },
+        {
+            "name": "IconStories",
+            "url": "https://cdn.discordapp.com/emojis/931956092454449152.png"
+        },
+        {
+            "name": "IconTrophy",
+            "url": "https://cdn.discordapp.com/emojis/931956092500586506.gif"
+        },
+        {
+            "name": "succes",
+            "url": "https://cdn.discordapp.com/emojis/931956092785791007.png"
+        },
+        {
+            "name": "KEKW2",
+            "url": "https://cdn.discordapp.com/emojis/931956092789993492.png"
+        },
+        {
+            "name": "squisettings",
+            "url": "https://cdn.discordapp.com/emojis/931956093184253982.png"
+        },
+        {
+            "name": "vb1",
+            "url": "https://cdn.discordapp.com/emojis/931956093263953940.png"
+        },
+        {
+            "name": "vb2",
+            "url": "https://cdn.discordapp.com/emojis/931956093314297856.png"
+        },
+        {
+            "name": "boohoo",
+            "url": "https://cdn.discordapp.com/emojis/931956093381378100.png"
+        },
+        {
+            "name": "sukces",
+            "url": "https://cdn.discordapp.com/emojis/931956093385572392.png"
+        },
+        {
+            "name": "cringe",
+            "url": "https://cdn.discordapp.com/emojis/931956093448499290.png"
+        },
+        {
+            "name": "bruh",
+            "url": "https://cdn.discordapp.com/emojis/931956093507227688.png"
+        },
+        {
+            "name": "idontunderstand",
+            "url": "https://cdn.discordapp.com/emojis/931956093612097577.png"
+        },
+        {
+            "name": "Servers",
+            "url": "https://cdn.discordapp.com/emojis/931981116557107321.png"
+        },
+        {
+            "name": "bot",
+            "url": "https://cdn.discordapp.com/emojis/931981116632608858.png"
+        },
+        {
+            "name": "minecraftegg",
+            "url": "https://cdn.discordapp.com/emojis/932953264872370196.png"
+        },
+        {
+            "name": "roblox",
+            "url": "https://cdn.discordapp.com/emojis/932956019661885461.png"
+        },
+        {
+            "name": "chaikaping",
+            "url": "https://cdn.discordapp.com/emojis/932956754587836516.gif"
+        },
+        {
+            "name": "discord_turbo",
+            "url": "https://cdn.discordapp.com/emojis/932957013317656627.png"
+        },
+        {
+            "name": "hentai",
+            "url": "https://cdn.discordapp.com/emojis/932957300568780813.gif"
+        },
+        {
+            "name": "penis_cool",
+            "url": "https://cdn.discordapp.com/emojis/932957863805083648.png"
+        },
+        {
+            "name": "discordpoop",
+            "url": "https://cdn.discordapp.com/emojis/932964509381951509.png"
+        },
+        {
+            "name": "wavegif",
+            "url": "https://cdn.discordapp.com/emojis/933128265055490119.gif"
+        }
+    ],
+    "createdTimestamp": 1642592886627,
+    "guildID": "929768772955435069",
+    "id": "933326955749703680"
+}

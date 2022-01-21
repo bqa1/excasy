@@ -3,6 +3,8 @@ const { MessageEmbed } = require('discord.js')
 const moment = require("moment");
 module.exports.run = async (client, message, oldMessage, newMessage) => {
 
+ 
+
     const data = await db.fetch(`modlogs_${message.guild.id}`)
     if (!data) return
     const channel = data.id
@@ -23,5 +25,5 @@ module.exports.run = async (client, message, oldMessage, newMessage) => {
     client.channels.cache.get(channel).send({embeds: [embeds]})
 
 
-
 }
+

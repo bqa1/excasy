@@ -1,0 +1,186 @@
+* {
+    font-family: 'Spartan', sans-serif;
+}
+
+#logo {
+    border-radius: 1000px;
+    margin: 30px auto 150px auto;
+    display: block;
+    transition: 0.2s;
+    max-width: -webkit-fill-available;
+    max-height: 400px;
+}
+
+
+
+
+#most {
+    margin-top: 250px;
+    text-align: center;
+}
+
+#footer {
+    color: white;
+    text-align: center;
+    margin-top: 420px;
+    padding: 5px 20px;
+}
+
+
+#button2 {
+    width: 250px;
+    height: 50px;
+    padding-top:3px;
+    border-radius: 350px;
+    background-color: #23272a;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+   color: white;
+   padding: 10px 15px;
+   margin: 3px;
+
+   justify-content: center;
+    font-size: 20px;
+    font-family: "ubuntu";
+}
+
+
+#button1 {
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+    background-color:  #23272a;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: "ubuntu";
+    font-size: 20px; 
+    margin-right: 30px;
+
+    justify-content: center;
+}
+
+.headeropis {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    height: 100px;
+}
+
+.headerdesc {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    font-size: 15px;
+}
+
+.header {
+    font-family: 'Ubuntu', sans-serif;
+
+    justify-content: center;
+    font-family: 'ubuntu';
+    display: flex;
+
+    margin: 30px auto 15px auto;
+    justify-content: center;
+    color: white;
+    font-size: 65px;
+
+}
+
+.gut {
+    color: #7289da
+}
+
+
+.header2 {
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    margin-top: 400px;
+}
+
+hr {
+    width: 100px;
+    color: #00EAFF;
+    border-radius: 80%;
+}
+
+a {
+    color: white;
+    transition: transform .2s;
+}
+
+#serwers {
+    color: white;
+    font-family: "ubuntu";
+    font-weight: 500;
+    display: flex
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c2f33
+}
+#commands-grid {
+    color: sas;
+    }
+    
+    #commands-minigrid {
+        background-color: #23272a;
+        border-radius: 10px;
+        padding: 10px 30px 10px 30px;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+    
+    #commands-name {
+        color: white;
+        font-family: "ubuntu";
+        font-weight: 500;
+        display: flex
+    }
+    
+    #commands-desc {
+        color: #99aab5;
+        font-family: "ubuntu";
+
+    }
+
+    nav {
+        background-color: #23272a;
+        padding: 20px 0 20px 0;
+        transition: 0.2s;
+    }
+    
+    #navtext {
+        color: #e4e4e4;
+        font-family: 'ubuntu';
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+        text-decoration: none;
+    }
+    
+    #navtext-div {
+        justify-content: space-evenly;
+        display: flex;
+    }
+    
